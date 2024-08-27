@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de texto</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+
+    <main class="tela">
+        <section class="tela_container-imagem">
+            <img class="tela_imagem" src="./assets/icone-alura.png">
+        </section>
+
+        <section class="tela_principal">
+            <div class="tela_principal_container-input">
+                <input class="tela_principal_entrada" placeholder="Digite seu texto">
+            </div>
+
+            <div class="tela_principal_observacao">
+                <img class="principal_observacao_imagem" src="./assets/icone-observacao.png">
+
+                <div class="principal_observacao_container">
+                    <p class="principal_observacao_texto">Apenas letras minúsculas e sem acento.</p>
+                </div>
+            </div>
+            
+            <div class="tela_principal_botao">
+                <button onclick="criptografarTexto()" class="principal_botao">Criptografar</button>
+                <button onclick="descriptografarTexto()" class="principal_botao_alt">Descriptografar</button>
+            </div>
+        </section>
+
+        <section class="tela_criptografia">
+            <h1 class="tela_criptografia_criptografado"></h1>
+            <img class="tela_criptografia_img" src="./assets/icone-pessoa.png">
+            <div class="tela_criptografia_container">
+                <p class="tela_criptografia_titulo">Nenhuma mensagem encontrada</p>
+                <p class="tela_criptografia_texto">Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+            
+        </section>
+    </main>
+
+    <script src="app.js" defer></script>
+</body>
+</html>
